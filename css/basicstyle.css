@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* otf */
+@font-face {
+    font-family: "冬青黑体简体中文 W3";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW3.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW6.otf") format("opentype");
+}
+
+/* woff */
+/* @font-face {
+    font-family: "冬青黑体简体中文 W3";
+    src: url("../font/HiraginoSansGBW3.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    src: url("../font/HiraginoSansGBW6.woff2") format("woff");
+} */
+
+::selection {
+    background-color: #D02378;
+    color: #ffffff;
+}
+
+body {
+    font-family: "冬青黑体简体中文 W3";
+    color: #434343;
+    height: 100%;
+    /* width: 100%;
+    min-width: 1200px; 
+    padding: 30px;
+    background: #f2f4f7; */
+}
+
+#box {
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #434343;
+}
+
+p {
+    font-size: 14px;
+}
+
+h5 {
+    font-family: "冬青黑体简体中文 W6";
+    margin: 20px 0;
+}
+
+
+/* footer部分 */
+#footer {
+    height: 100px;
+    border-top: 2px solid #D02378;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: right;
+    color: #D02378;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #D02378;
+}
+
+/* content部分 */
+#content {
+    padding: 0 30px;
+}
+
+#content h5 {
+    font-family: "冬青黑体简体中文 W6";
+    margin: 20px 0;
+}
+
+table {
+    font-size: 14px;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+/* 表格样式 */
+/* table td{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+} */
+
+table td:nth-child(1),
+table td:nth-last-child(1),
+table tr span {
+    color: #999;
+}
+
+table td a:hover{
+    color: #D02378;
+}
+
+/* 分页 */
+.pagination {
+    justify-content: center;
+}
+

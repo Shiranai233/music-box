@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐盒 MusicBox</title>
+
+    <link href="css/bootstrap_pink.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link href="css/APlayer.min.css" rel="stylesheet">
+    <script src="js/APlayer.min.js"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <div id="header">
+        <div id="logo">
+            <a href="#" id="logolink" type="button" onclick="loadPage('indexcontent_bootstrap.html#recommend')">
+                <img src="images/logo.png">
+            </a>
+        </div>
+        <div id="search">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="搜索..." aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><img src="./images/search_gray.png" width="20px"></span>
+              </div>
+        </div>
+        <div id="login"></div>
+
+    </div>
+    <!-- leftnav -->
+    <div id="leftnav">
+        <ul>
+            <a class="bannerlink" href="#" type="button" onclick="loadPage('indexcontent_bootstrap.html#recommend')">
+                <li>发现音乐</li>
+            </a>
+            <a class="bannerlink" href="#" type="button" onclick="loadPage('mvpage.html')">
+                <li>MV</li>
+            </a>
+            <a class="bannerlink" href="#" type="button" onclick="loadPage('mymusic.html')">
+                <li>我的音乐</li>
+            </a>
+            <a class="bannerlink" href="#" type="button" onclick="loadPage('playlist.html')">
+                <li>播放列表</li>
+            </a>
+        </ul>
+    </div>
+    <iframe src="indexcontent_bootstrap.html#recommend" id="page-frame"></iframe>
+
+    <!-- 动态改变iframe页面 -->
+    <script>
+        function loadPage(url) {
+            var iframe = document.getElementById('page-frame');
+            iframe.src = url;
+        }
+    </script>
+
+    <!-- APlayer 播放器 -->
+    <div id="aplayer"></div>
+    <script>
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            fixed: true,
+            theme: '#D02378',
+            audio: [{
+                name: 'Darlin\'',
+                artist: 'BENI',
+                url: './music/Darlin\'.mp3',
+                cover: 'https://y.qq.com/music/photo_new/T002R300x300M0000002V53V4OHEY2_2.jpg?max_age=2592000'
+            },
+            {
+                name: 'Beautiful World',
+                artist: '宇多田ヒカル',
+                url: './music/Beautiful World.mp3',
+                cover: 'https://y.qq.com/music/photo_new/T002R300x300M0000009pAn31h3ff0_2.jpg?max_age=2592000'
+            },
+            {
+                name: 'Best of my Love',
+                artist: '安田レイ',
+                url: './music/Best of my Love.m4a',
+                cover: 'https://y.qq.com/music/photo_new/T002R300x300M000004WxMSb2RkPbN_2.jpg?max_age=2592000'
+            },
+            {
+                name: '不得不爱',
+                artist: '潘玮柏 / 弦子',
+                url: './music/不得不爱.m4a',
+                cover: 'https://y.qq.com/music/photo_new/T002R300x300M0000025CwW50uC4hZ_2.jpg?max_age=2592000'
+            },
+            {
+                name: 'Shooting Star',
+                artist: 'Anna Yvette',
+                url: './music/Shooting Star.m4a',
+                cover: 'https://y.qq.com/music/photo_new/T002R300x300M000000TSdai3PVZty_2.jpg?max_age=2592000'
+            }]
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* otf */
+@font-face {
+    font-family: "冬青黑体简体中文 W3";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW3.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW6.otf") format("opentype");
+}
+
+/* woff */
+/* @font-face {
+    font-family: "冬青黑体简体中文 W3";
+    src: url("../font/HiraginoSansGBW3.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    src: url("../font/HiraginoSansGBW6.woff2") format("woff");
+} */
+
+::selection {
+    background-color: #D02378;
+    color: #ffffff;
+}
+
+body {
+    font-family: "冬青黑体简体中文 W3";
+    color: #434343;
+    height: 100%;
+    /* width: 100%;
+    min-width: 1200px; 
+    padding: 30px;
+    background: #f2f4f7; */
+}
+
+a {
+    text-decoration: none;
+    color: #434343;
+}
+
+p {
+    font-size: 14px;
+}
+
+#box {
+    padding: 30px;
+}
+
+/* footer部分 */
+#footer {
+    height: 100px;
+    border-top: 2px solid #D02378;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: right;
+    color: #D02378;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #D02378;
+}
+
+/* content部分 */
+#content {
+    padding: 0 30px;
+}
+
+#content #headnav {
+    font-family: "冬青黑体简体中文 W6";
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+#content h5 {
+    font-family: "冬青黑体简体中文 W6";
+    margin: 20px 0;
+}
+
+#content h5 span {
+    font-family: "冬青黑体简体中文 W3";
+}
+
+#content h5 a:hover {
+    color: black;
+}
+
+#content #headnav ul li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 35px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+#content #headnav ul li a {
+    font-size: 20px;
+    color: #434343;
+    text-decoration: none;
+}
+
+#content #headnav ul li a:hover {
+    /* font-size: 25px; */
+    font-family: "冬青黑体简体中文 W6";
+    /* font-weight: bold; */
+    color: #D02378;
+}
+
+/* nav ul li a:visited{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    border-bottom: 5px solid #D02378;
+} */
+
+#recommend:target,
+#musiclist:target,
+#ranklist:target,
+#singer:target {
+    display: block;
+}
+
+#recommend,
+#musiclist,
+#ranklist,
+#singer {
+    display: none;
+    scroll-margin-top: 85px;
+    padding: 0 20px;
+}
+
+/* 推荐子界面 */
+#carousel {
+    overflow: hidden;
+}
+
+
+#carouselExampleIndicators {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#musiclistRecommend img,
+#musiclist .container img {
+    width: 140px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+#musiclistRecommend .col,
+#musiclist .container .col {
+    position: relative;
+}
+
+#musiclistRecommend .playbutton,
+#musiclist .container .playbutton {
+    filter: opacity(0);
+    position: absolute;
+    width: 25px;
+    top: 108px;
+    left: 120px;
+    transition: filter 0.3s ease-in-out;
+}
+
+#musiclistRecommend p,
+#musiclist .container p {
+    display: block;
+    padding: 0 2px;
+    margin: 0px;
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#musiclistRecommend .listcreater,
+#musiclist .container .listcreater {
+    padding: 0px;
+    width: auto;
+    color: #999;
+    margin-bottom: 1.25rem;
+}
+
+#musiclistRecommend .listcreater a,
+#musiclist .container .listcreater a {
+    color: #999;
+}
+
+#musiclistRecommend a:hover .playbutton,
+#musiclist .container a:hover .playbutton {
+    filter: opacity(80%);
+}
+
+#musiclistRecommend a:hover .text-truncate,
+#musiclist .container a:hover .text-truncate,
+#musiclistRecommend .col .listcreater a:hover,
+#musiclist .container .col .listcreater a:hover{
+    color: #D02378;
+}
+
+#musiclistRecommend .playcount,
+#musiclist .container .playcount {
+    width: 140px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top: 0;
+    border-radius: 5px 5px 0 0;
+    padding: 2px 0 2px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+/* 推荐-热歌排行 */
+#hotmusicRank #rankbox {
+    /* background-image: url(../images/ranklist_backgraound.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; */
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* 每个排行 */
+#hotmusicRank #rankbox .rankitem {
+    display: inline-block;
+    position: relative;
+    margin: 0 30px;
+    width: 20%;
+    height: 500px;
+    background-color: rgba(208, 35, 119, 0.7);
+    color: #fff;
+}
+
+#hotmusicRank #rankbox .ranktitle {
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+
+#hotmusicRank #rankbox p {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* 背景图片与滤镜 */
+#hotmusicRank #rankbox .rankitem:nth-child(1){
+    background-image: url('../images/ranklist_backgraound_filtered70.jpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: 30px 0; */
+}
+
+#hotmusicRank #rankbox .rankitem:nth-child(2){
+    background-image: url('../images/ranklist_backgraound_filtered70.jpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -177px 0;
+}
+
+#hotmusicRank #rankbox .rankitem:nth-child(3){
+    background-image: url('../images/ranklist_backgraound_filtered70.jpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -354px 0;
+}
+
+#hotmusicRank #rankbox .rankitem:nth-child(4){
+    background-image: url('../images/ranklist_backgraound_filtered70.jpg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -530px 0;
+}
+
+/* 装饰线与播放按钮 */
+#hotmusicRank #rankbox .playline {
+    width: 36px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -18px;
+    position: absolute;
+}
+
+#hotmusicRank #rankbox .rankitem:hover .playline {
+    opacity: 0;
+}
+
+#hotmusicRank #rankbox .rankitem .playicon {
+    background-image: url('../images/playbutton.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: 73px;
+    margin-left: -25px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transform: scale(.7);
+    transition-property: opacity, transform;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#hotmusicRank #rankbox .rankitem:hover .playicon {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* 排行内容 */
+#hotmusicRank #rankbox .rankcontent ul {
+    padding: 60px 30px 0 30px;
+}
+
+#hotmusicRank #rankbox .rankcontent ul li {
+    list-style-type: none;
+    margin: 0 0 30px 25px;
+    position: relative;
+}
+
+#hotmusicRank #rankbox .rankcontent ul li a{
+    color: #fff;
+}
+
+/* #hotmusicRank #rankbox .rankcontent ul li div{
+    font-size: 14px;
+} */
+
+#hotmusicRank #rankbox .rankcontent .ranknum{
+    position: absolute;
+    left: -25px;
+} 
+
+#hotmusicRank #rankbox .rankcontent .rankmusicname,
+#hotmusicRank #rankbox .rankcontent .rankmusicsinger{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* 歌单子界面 */
+#listtype {
+    font-size: 14px;
+    margin-bottom: 20px;
+    /* border-bottom: 1px #D02378 dashed; */
+}
+
+#listtype .typename {
+    font-weight: bold;
+    padding: 0 0;
+    text-align: center;
+}
+
+#musiclist #listtype ul {
+    padding-left: 0;
+}
+
+#musiclist #listtype ul li {
+    list-style-type: none;
+    white-space: nowrap;
+    display: inline-block;
+    width: 60px;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+
+/* 排行榜子界面 */
+#ranklist table {
+    font-size: 14px;
+}
+
+#ranklist table tr:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+#ranklist table td:nth-child(1),
+#ranklist table td:nth-last-child(1),
+#ranklist table tr span {
+    color: #999;
+}
+
+#ranklist table td a:hover {
+    color: #D02378;
+}
+
+/* #ranklist table tr td {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+} */
+
+
+/* 歌手子界面 */
+/* 歌手类型 */
+#singer #singertype ul {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+#singer #singertype ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 8px;
+    margin: 0 12px 14px 0;
+}
+
+#singer #singertype .alloptions {
+    background-color: #D02378;
+    margin-right: 25px;
+}
+
+#singer #singertype .alloptions a {
+    color: #fff;
+}
+
+/* 歌手列表 */
+#singer #singerlist {
+    padding-top: 20px;
+}
+
+#singer #singerlist .col {
+    text-align: center;
+}
+
+#singer #singerlist img {
+    transform: scale(1);
+    width: 140px;
+    border-radius: 999px;
+    transition: transform .5s cubic-bezier(0, 1, .75, 1);
+}
+
+#singer #singerlist img:hover {
+    transform: scale(1.07);
+}
+
+#singer #singerlist a p {
+    font-size: 16px;
+    font-family: "冬青黑体简体中文 W6";
+    padding: 10px 0 20px 0;
+    /* display: block;
+    width: 140px;
+    overflow: hidden; */
+}

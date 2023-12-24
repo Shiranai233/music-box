@@ -1,0 +1,1363 @@
+<!-- indexcontent.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap_pink.css" rel="stylesheet">
+    <link href="css/indexcontent_bootstrap.css" rel="stylesheet">
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+    <div id="box">
+        <!-- content -->
+        <div id="content">
+            <!-- 内容导航栏 -->
+            <nav id="headnav">
+                <ul>
+                    <li><a href="#recommend">推荐</a></li>
+                    <li><a href="#musiclist">歌单</a></li>
+                    <li><a href="#ranklist">排行榜</a></li>
+                    <li><a href="#singer">歌手</a></li>
+                </ul>
+            </nav>
+
+            <!-- 推荐子界面 -->
+            <div id="recommend">
+                <div id="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <a href="notfound.html"><img src="./images/banner01.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <a href="notfound.html"><img src="./images/banner02.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <a href="notfound.html"><img src="./images/banner03.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <a href="notfound.html"><img src="./images/banner04.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <a href="notfound.html"><img src="./images/banner05.jpg" class="d-block w-100"
+                                        alt="..."></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <!-- 放大，置于上层carousel的底部，高斯模糊 -->
+                    <!-- <div id="carouselbottom" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="./images/banner1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./images/banner2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./images/banner3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./images/banner4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="./images/banner5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+                <!-- 推荐歌单 -->
+                <div id="musiclistRecommend">
+                    <h5><a href="#musiclist">推荐歌单 <span>></span></a></h5>
+                    <div class="container">
+                        <!-- 1-6 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" title="助眠辑 | 自然音，伴灵动乐符萦绕耳畔"><img src="./images/musiclist1.jpg"
+                                        alt="助眠辑 | 自然音，伴灵动乐符萦绕耳畔">
+                                    <p class="playcount">▷ 2863万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">助眠辑 | 自然音，伴灵动乐符萦绕耳畔</p>
+                                    <p class="listcreater">by <a href="#">名侦探-柯北</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="那些你熟悉却又不知道名字的轻音乐"><img src="./images/musiclist2.jpg"
+                                        alt="那些你熟悉却又不知道名字的轻音乐">
+                                    <p class="playcount">▷ 10484万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">那些你熟悉却又不知道名字的轻音乐</p>
+                                    <p class="listcreater">by <a href="#">Lelow</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="『耳机福利』左右耳已跪"><img src="./images/musiclist3.jpg" alt="『耳机福利』左右耳已跪">
+                                    <p class="playcount">▷ 3745万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">『耳机福利』左右耳已跪</p>
+                                    <p class="listcreater">by <a href="#">舌尖上的洛天依</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="「纯音乐」戴上耳机，仿佛拥有了整片星空"><img src="./images/musiclist4.jpg"
+                                        alt="「纯音乐」戴上耳机，仿佛拥有了整片星空">
+                                    <p class="playcount">▷ 626万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">「纯音乐」戴上耳机，仿佛拥有了整片星空</p>
+                                    <p class="listcreater">by <a href="#">HUMAN00</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="「造语歌」穿透灵魂 如唱诗般空灵唯美♪"><img src="./images/musiclist5.jpg"
+                                        alt="「造语歌」穿透灵魂 如唱诗般空灵唯美♪">
+                                    <p class="playcount">▷ 1361万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">「造语歌」穿透灵魂 如唱诗般空灵唯美♪</p>
+                                    <p class="listcreater">by <a href="#">我眼睛会发光i</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="深情布鲁斯，浓情老酒馆。"><img src="./images/musiclist6.jpg" alt="深情布鲁斯，浓情老酒馆。">
+                                    <p class="playcount">▷ 2113万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">深情布鲁斯，浓情老酒馆。</p>
+                                    <p class="listcreater">by <a href="#">帐号已注销</a></p>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 7-12 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#" title="【德语】莱茵河畔之风拂过心田"><img src="./images/musiclist7.jpg"
+                                        alt="【德语】莱茵河畔之风拂过心田">
+                                    <p class="playcount">▷ 34万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">【德语】莱茵河畔之风拂过心田</p>
+                                    <p class="listcreater">by <a href="#">Tiera_____</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="国人雷鬼 Ι 探索不拘一格的玩性洒脱"><img src="./images/musiclist8.jpg"
+                                        alt="国人雷鬼 Ι 探索不拘一格的玩性洒脱">
+                                    <p class="playcount">▷ 147万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">国人雷鬼 Ι 探索不拘一格的玩性洒脱</p>
+                                    <p class="listcreater">by <a href="#">仲冬二二</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="【古典音乐】治疗焦虑症的良药"><img src="./images/musiclist9.jpg"
+                                        alt="【古典音乐】治疗焦虑症的良药">
+                                    <p class="playcount">▷ 1504万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">【古典音乐】治疗焦虑症的良药</p>
+                                    <p class="listcreater">by <a href="#">badtomato</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="300支后摇乐队，300种感性共鸣"><img src="./images/musiclist10.jpg"
+                                        alt="300支后摇乐队，300种感性共鸣">
+                                    <p class="playcount">▷ 541万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">300支后摇乐队，300种感性共鸣</p>
+                                    <p class="listcreater">by <a href="#">BlindSnowflake</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="深度睡眠 |重度失眠者专用歌单鸣"><img src="./images/musiclist11.jpg"
+                                        alt="深度睡眠 |重度失眠者专用歌单">
+                                    <p class="playcount">▷ 7124万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">深度睡眠 |重度失眠者专用歌单</p>
+                                    <p class="listcreater">by <a href="#">音旧-</a></p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#" title="法语爵士|红酒与玫瑰浪漫邂逅"><img src="./images/musiclist12.jpg"
+                                        alt="法语爵士|红酒与玫瑰浪漫邂逅">
+                                    <p class="playcount">▷ 519万</p>
+                                    <img class="playbutton" src="./images/playbutton.png">
+                                    <p class="text-truncate">法语爵士|红酒与玫瑰浪漫邂逅</p>
+                                    <p class="listcreater">by <a href="#">卧室坐家</a></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 热歌排行 -->
+                <div id="hotmusicRank">
+                    <h5><a href="#ranklist">热歌排行 <span>></span></a></h5>
+                    <div id="rankbox">
+                        <!-- 飙升榜 -->
+                        <div class="rankitem">
+                            <div class="ranktitle">
+                                <p>飙升榜</p>
+                            </div>
+                            <div class="playline"></div>
+                            <div class="playicon"></div>
+                            <div class="rankcontent">
+                                <ul>
+                                    <li>
+                                        <div class="ranknum">1</div>
+                                        <div class="rankmusicname"><a href="#" title="风驶过的声音是">风驶过的声音是</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="海洋Bo">海洋Bo </a>/<a href="#" title="FRIEME"> FRIEME </a>/<a href="#" title="Zy"> Zy</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">2</div>
+                                        <div class="rankmusicname"><a href="#" title="星间旅行 Interstellar Journey (英文版)">星间旅行 Interstellar Journey (英文版)</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="HOYO-MiX">HOYO-MiX </a>/<a href="#" title="Lea Sirk"> Lea Sirk</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">3</div>
+                                        <div class="rankmusicname"><a href="#" title="爱一半留一半">爱一半留一半</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="河南说唱之神">河南说唱之神</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 新歌榜 -->
+                        <div class="rankitem">
+                            <div class="ranktitle">
+                                <p>新歌榜</p>
+                            </div>
+                            <div class="playline"></div>
+                            <div class="playicon"></div>
+                            <div class="rankcontent">
+                                <ul>
+                                    <li>
+                                        <div class="ranknum">1</div>
+                                        <div class="rankmusicname"><a href="#" title="风驶过的声音是">风驶过的声音是</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="海洋Bo">海洋Bo </a>/<a href="#" title="FRIEME"> FRIEME </a>/<a href="#" title="Zy"> Zy</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">2</div>
+                                        <div class="rankmusicname"><a href="#" title="身骑白马 (Live版)">身骑白马 (Live版)</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="张杰">张杰</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">3</div>
+                                        <div class="rankmusicname"><a href="#" title="Don't Go Back Tonight">Don't Go Back Tonight半</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="Tizzy T">Tizzy T</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 欧美榜 -->
+                        <div class="rankitem">
+                            <div class="ranktitle">
+                                <p>欧美榜</p>
+                            </div>
+                            <div class="playline"></div>
+                            <div class="playicon"></div>
+                            <div class="rankcontent">
+                                <ul>
+                                    <li>
+                                        <div class="ranknum">1</div>
+                                        <div class="rankmusicname"><a href="#" title="Last Night">Last Night</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="Morgan Wallen">Morgan Wallen</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">2</div>
+                                        <div class="rankmusicname"><a href="#" title="Kill Bill">Kill Bill</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="SZA">SZA</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">3</div>
+                                        <div class="rankmusicname"><a href="#" title="Flowers">Flowers</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="Miley Cyrus">Miley Cyrus</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 日韩榜 -->
+                        <div class="rankitem">
+                            <div class="ranktitle">
+                                <p>日韩榜</p>
+                            </div>
+                            <div class="playline"></div>
+                            <div class="playicon"></div>
+                            <div class="rankcontent">
+                                <ul>
+                                    <li>
+                                        <div class="ranknum">1</div>
+                                        <div class="rankmusicname"><a href="#" title="アイドル">アイドル</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="YOASOBI">YOASOBI</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">2</div>
+                                        <div class="rankmusicname"><a href="#" title="손오공 (Super)">손오공 (Super)</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="SEVENTEEN (세븐틴)">SEVENTEEN (세븐틴)</a></div>
+                                    </li>
+                                    <li>
+                                        <div class="ranknum">3</div>
+                                        <div class="rankmusicname"><a href="#" title="ギターと孤独と蒼い惑星">ギターと孤独と蒼い惑星</a></div>
+                                        <div class="rankmusicsinger"><a href="#" title="結束バンド">結束バンド</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 歌单子界面 -->
+            <div id="musiclist">
+                <div id="listtype">
+                    <!-- <p style="font-size: 16px;"><strong>歌单风格</strong></p> -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1 typename">语种</div>
+                            <div class="col-3">
+                                <ul>
+                                    <li><a href="#">华语</a></li>
+                                    <li><a href="#">欧美</a></li>
+                                    <li><a href="#">日语</a></li>
+                                    <li><a href="#">韩语</a></li>
+                                    <li><a href="#">粤语</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-1 typename">风格</div>
+                            <div class="col-3">
+                                <ul>
+                                    <!-- | | | | | | | | | | | | | | | 蓝调| 雷鬼| 世界音乐| 拉丁| New Age| 古风| 后摇| Bossa Nova| -->
+                                    <li><a href="#">流行</a></li>
+                                    <li><a href="#">摇滚</a></li>
+                                    <li><a href="#">民谣</a></li>
+                                    <li><a href="#">电子</a></li>
+                                    <li><a href="#">舞曲</a></li>
+
+                                    <li><a href="#">说唱</a></li>
+                                    <li><a href="#">轻音乐</a></li>
+                                    <li><a href="#">爵士</a></li>
+                                    <li><a href="#">乡村</a></li>
+                                    <li><a href="#">R&B</a></li>
+
+                                    <li><a href="#">古典</a></li>
+                                    <li><a href="#">民族</a></li>
+                                    <li><a href="#">英伦</a></li>
+                                    <li><a href="#">金属</a></li>
+                                    <li><a href="#">朋克</a></li>
+
+                                </ul>
+                            </div>
+
+                            <div class="col-1 typename">场景</div>
+                            <div class="col-3">
+                                <ul>
+                                    <li><a href="#">清晨</a></li>
+                                    <li><a href="#">夜晚</a></li>
+                                    <li><a href="#">学习</a></li>
+                                    <li><a href="#">工作</a></li>
+                                    <li><a href="#">午休</a></li>
+
+                                    <li><a href="#">下午茶</a></li>
+                                    <li><a href="#">地铁</a></li>
+                                    <li><a href="#">驾车</a></li>
+                                    <li><a href="#">运动</a></li>
+                                    <li><a href="#">旅行</a></li>
+
+                                    <li><a href="#">散步</a></li>
+                                    <li><a href="#">酒吧</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1 typename">情感</div>
+                            <div class="col-3">
+                                <ul>
+                                    <li><a href="#">怀旧</a></li>
+                                    <li><a href="#">清新</a></li>
+                                    <li><a href="#">浪漫</a></li>
+                                    <li><a href="#">伤感</a></li>
+                                    <li><a href="#">治愈</a></li>
+
+                                    <li><a href="#">放松</a></li>
+                                    <li><a href="#">孤独</a></li>
+                                    <li><a href="#">感动</a></li>
+                                    <li><a href="#">兴奋</a></li>
+                                    <li><a href="#">快乐</a></li>
+
+                                    <li><a href="#">安静</a></li>
+                                    <li><a href="#">思念</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="col-1 typename">主题</div>
+                            <div class="col-3">
+                                <ul>
+                                    <li><a href="#">综艺</a></li>
+                                    <li><a href="#">影视原声</a></li>
+                                    <li><a href="#">ACG</a></li>
+                                    <li><a href="#">儿童</a></li>
+                                    <li><a href="#">校园</a></li>
+
+                                    <li><a href="#">游戏</a></li>
+                                    <li><a href="#">70后</a></li>
+                                    <li><a href="#">80后</a></li>
+                                    <li><a href="#">90后</a></li>
+                                    <li><a href="#">网络歌曲</a></li>
+
+                                    <li><a href="#">KTV</a></li>
+                                    <li><a href="#">经典</a></li>
+                                    <li><a href="#">翻唱</a></li>
+                                    <li><a href="#">吉他</a></li>
+                                    <li><a href="#">钢琴</a></li>
+
+                                    <li><a href="#">器乐</a></li>
+                                    <li><a href="#">榜单</a></li>
+                                    <li><a href="#">00后</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <!-- 1-6 -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" title="助眠辑 | 自然音，伴灵动乐符萦绕耳畔"><img src="./images/musiclist1.jpg"
+                                    alt="助眠辑 | 自然音，伴灵动乐符萦绕耳畔">
+                                <p class="playcount">▷ 2863万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">助眠辑 | 自然音，伴灵动乐符萦绕耳畔</p>
+                                <p class="listcreater">by <a href="#">名侦探-柯北</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="那些你熟悉却又不知道名字的轻音乐"><img src="./images/musiclist2.jpg"
+                                    alt="那些你熟悉却又不知道名字的轻音乐">
+                                <p class="playcount">▷ 10484万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">那些你熟悉却又不知道名字的轻音乐</p>
+                                <p class="listcreater">by <a href="#">Lelow</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="『耳机福利』左右耳已跪"><img src="./images/musiclist3.jpg" alt="『耳机福利』左右耳已跪">
+                                <p class="playcount">▷ 3745万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">『耳机福利』左右耳已跪</p>
+                                <p class="listcreater">by <a href="#">舌尖上的洛天依</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="「纯音乐」戴上耳机，仿佛拥有了整片星空"><img src="./images/musiclist4.jpg"
+                                    alt="「纯音乐」戴上耳机，仿佛拥有了整片星空">
+                                <p class="playcount">▷ 626万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">「纯音乐」戴上耳机，仿佛拥有了整片星空</p>
+                                <p class="listcreater">by <a href="#">HUMAN00</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="「造语歌」穿透灵魂 如唱诗般空灵唯美♪"><img src="./images/musiclist5.jpg"
+                                    alt="「造语歌」穿透灵魂 如唱诗般空灵唯美♪">
+                                <p class="playcount">▷ 1361万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">「造语歌」穿透灵魂 如唱诗般空灵唯美♪</p>
+                                <p class="listcreater">by <a href="#">我眼睛会发光i</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="深情布鲁斯，浓情老酒馆。"><img src="./images/musiclist6.jpg" alt="深情布鲁斯，浓情老酒馆。">
+                                <p class="playcount">▷ 2113万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">深情布鲁斯，浓情老酒馆。</p>
+                                <p class="listcreater">by <a href="#">帐号已注销</a></p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 7-12 -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" title="【德语】莱茵河畔之风拂过心田"><img src="./images/musiclist7.jpg" alt="【德语】莱茵河畔之风拂过心田">
+                                <p class="playcount">▷ 34万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">【德语】莱茵河畔之风拂过心田</p>
+                                <p class="listcreater">by <a href="#">Tiera_____</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="国人雷鬼 Ι 探索不拘一格的玩性洒脱"><img src="./images/musiclist8.jpg"
+                                    alt="国人雷鬼 Ι 探索不拘一格的玩性洒脱">
+                                <p class="playcount">▷ 147万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">国人雷鬼 Ι 探索不拘一格的玩性洒脱</p>
+                                <p class="listcreater">by <a href="#">仲冬二二</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="【古典音乐】治疗焦虑症的良药"><img src="./images/musiclist9.jpg" alt="【古典音乐】治疗焦虑症的良药">
+                                <p class="playcount">▷ 1504万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">【古典音乐】治疗焦虑症的良药</p>
+                                <p class="listcreater">by <a href="#">badtomato</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="300支后摇乐队，300种感性共鸣"><img src="./images/musiclist10.jpg"
+                                    alt="300支后摇乐队，300种感性共鸣">
+                                <p class="playcount">▷ 541万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">300支后摇乐队，300种感性共鸣</p>
+                                <p class="listcreater">by <a href="#">BlindSnowflake</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="深度睡眠 |重度失眠者专用歌单鸣"><img src="./images/musiclist11.jpg"
+                                    alt="深度睡眠 |重度失眠者专用歌单">
+                                <p class="playcount">▷ 7124万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">深度睡眠 |重度失眠者专用歌单</p>
+                                <p class="listcreater">by <a href="#">音旧-</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="法语爵士|红酒与玫瑰浪漫邂逅"><img src="./images/musiclist12.jpg" alt="法语爵士|红酒与玫瑰浪漫邂逅">
+                                <p class="playcount">▷ 519万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">法语爵士|红酒与玫瑰浪漫邂逅</p>
+                                <p class="listcreater">by <a href="#">卧室坐家</a></p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 13-18 -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" title="日系温柔女声| 沐浴在歌声中的暖阳下"><img src="./images/musiclist13.jpg"
+                                    alt="日系温柔女声| 沐浴在歌声中的暖阳下">
+                                <p class="playcount">▷ 2141万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">日系温柔女声| 沐浴在歌声中的暖阳下</p>
+                                <p class="listcreater">by <a href="#">chaz1</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="小酒馆的微醺需要腔调和情怀"><img src="./images/musiclist14.jpg" alt="小酒馆的微醺需要腔调和情怀">
+                                <p class="playcount">▷ 2521万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">小酒馆的微醺需要腔调和情怀</p>
+                                <p class="listcreater">by <a href="#">齊宣王啃牛角</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="提琴后摇 I 颅内盛宴，思绪狂欢"><img src="./images/musiclist15.jpg"
+                                    alt="提琴后摇 I 颅内盛宴，思绪狂欢">
+                                <p class="playcount">▷ 347万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">提琴后摇 I 颅内盛宴，思绪狂欢</p>
+                                <p class="listcreater">by <a href="#">Xenyc</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="华语独立乐团｜将温柔塞满黄昏"><img src="./images/musiclist16.jpg" alt="华语独立乐团｜将温柔塞满黄昏">
+                                <p class="playcount">▷ 134万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">华语独立乐团｜将温柔塞满黄昏</p>
+                                <p class="listcreater">by <a href="#">蜜糖男孩</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="「Cool Jazz」冷爵士让你全身心放松"><img src="./images/musiclist17.jpg"
+                                    alt="「Cool Jazz」冷爵士让你全身心放松">
+                                <p class="playcount">▷ 362万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">「Cool Jazz」冷爵士让你全身心放松</p>
+                                <p class="listcreater">by <a href="#">JazzLove</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="电子·中国风 I 感受角徵宫商的荡气回肠"><img src="./images/musiclist18.jpg"
+                                    alt="电子·中国风 I 感受角徵宫商的荡气回肠">
+                                <p class="playcount">▷ 2792万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">电子·中国风 I 感受角徵宫商的荡气回肠</p>
+                                <p class="listcreater">by <a href="#">Xenyc</a></p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 19-24 -->
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" title="100首华语民谣，因为懂得才有共鸣"><img src="./images/musiclist19.jpg"
+                                    alt="100首华语民谣，因为懂得才有共鸣">
+                                <p class="playcount">▷ 3584万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">100首华语民谣，因为懂得才有共鸣</p>
+                                <p class="listcreater">by <a href="#">情思天鹅</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="软萌合唱｜让可愛治愈这个世界"><img src="./images/musiclist20.jpg" alt="软萌合唱｜让可愛治愈这个世界">
+                                <p class="playcount">▷ 191万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">软萌合唱｜让可愛治愈这个世界</p>
+                                <p class="listcreater">by <a href="#">阿卡琳</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="钢琴后摇 I 初雪点地，窸窣低语"><img src="./images/musiclist21.jpg"
+                                    alt="钢琴后摇 I 初雪点地，窸窣低语">
+                                <p class="playcount">▷ 613万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">钢琴后摇 I 初雪点地，窸窣低语</p>
+                                <p class="listcreater">by <a href="#">Xenyc</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="世界顶级沙发酒吧音乐。"><img src="./images/musiclist22.jpg" alt="世界顶级沙发酒吧音乐。">
+                                <p class="playcount">▷ 1655万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">世界顶级沙发酒吧音乐。</p>
+                                <p class="listcreater">by <a href="#">雰川水也</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="纯音 | 静淌时隙悄然掠过 | 助眠"><img src="./images/musiclist23.jpg"
+                                    alt="纯音 | 静淌时隙悄然掠过 | 助眠">
+                                <p class="playcount">▷ 224万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">纯音 | 静淌时隙悄然掠过 | 助眠</p>
+                                <p class="listcreater">by <a href="#">Themint</a></p>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#" title="黑胶唱片机|微醺情调耳边低语"><img src="./images/musiclist24.jpg" alt="黑胶唱片机|微醺情调耳边低语">
+                                <p class="playcount">▷ 178万</p>
+                                <img class="playbutton" src="./images/playbutton.png">
+                                <p class="text-truncate">黑胶唱片机|微醺情调耳边低语</p>
+                                <p class="listcreater">by <a href="#">卧室坐家</a></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分页 -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- 排行榜子界面 -->
+            <div id="ranklist">
+                <div id="hotrank">
+                    <h5>热歌榜</h5>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:5%;">
+                            <col style="width:50%;">
+                            <col style="width:30%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>歌曲</th>
+                            <th>歌手</th>
+                            <th>时长</th>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>1</td>
+                            <td></td>
+                            <td><a href="#">Beautiful World</a><span> （动画电影《新世纪福音战士新剧场版:序》片尾曲）</span></td>
+                            <td><a href="#">宇多田ヒカル</a></td>
+                            <td>05:14</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>2</td>
+                            <td></td>
+                            <td><a href="#">Best of my Love</a><span> （TV动画《宇宙战舰大和号2199》ED2）</span></td>
+                            <td><a href="#">安田レイ</a></td>
+                            <td>05:45</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>3</td>
+                            <td></td>
+                            <td><a href="#">晴天</a></td>
+                            <td><a href="#">周杰伦</a></td>
+                            <td>04:29</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td><a href="#">Style</a></td>
+                            <td><a href="#">Taylor Swift</a></td>
+                            <td>03:51</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td><a href="#">Shooting Star</a></td>
+                            <td><a href="#">Anna Yvette</a></td>
+                            <td>03:59</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td><a href="#">New Romantics</a></td>
+                            <td><a href="#">Taylor Swift</a></td>
+                            <td>03:50</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td><a href="#">多远都要在一起</a></td>
+                            <td><a href="#">G.E.M. 邓紫棋</a></td>
+                            <td>03:37</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td><a href="#">天外来物</a></td>
+                            <td><a href="#">薛之谦</a></td>
+                            <td>04:17</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td><a href="#">孤勇者</a> <span>（《英雄联盟：双城之战》动画剧集中文主题曲）</span></td>
+                            <td><a href="#">陈奕迅</a></td>
+                            <td>04:16</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td><a href="#">海阔天空</a></td>
+                            <td><a href="#">BEYOND</a></td>
+                            <td>05:26</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="ukrank">
+                    <h5>英国UK榜</h5>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:5%;">
+                            <col style="width:50%;">
+                            <col style="width:30%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>歌曲</th>
+                            <th>歌手</th>
+                            <th>时长</th>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>1</td>
+                            <td></td>
+                            <td><a href="#">Wish You The Best</a></td>
+                            <td><a href="#">Lewis Capaldi</a></td>
+                            <td>03:29</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>2</td>
+                            <td></td>
+                            <td><a href="#">Miracle</a></td>
+                            <td><a href="#">Calvin Harris </a>/<a href="#"> Ellie Goulding</a></td>
+                            <td>05:45</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>3</td>
+                            <td></td>
+                            <td><a href="#">Daylight</a></td>
+                            <td><a href="#">David Kushner</a></td>
+                            <td>03:32</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td><a href="#">People</a></td>
+                            <td><a href="#">liBianca</a></td>
+                            <td>03:01</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td><a href="#">Eyes Closed</a></td>
+                            <td><a href="#">Ed Sheeran</a></td>
+                            <td>03:14</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td><a href="#">Calm Down</a></td>
+                            <td><a href="#">Rema</a></td>
+                            <td>03:39</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td><a href="#">Forget Me</a></td>
+                            <td><a href="#">Lewis Capaldi</a></td>
+                            <td>03:23</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td><a href="#">As It Was</a></td>
+                            <td><a href="#">Harry Styles</a></td>
+                            <td>02:47</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td><a href="#">Flowers</a></td>
+                            <td><a href="#">Miley Cyrus</a></td>
+                            <td>03:20</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td><a href="#">Search & Rescue (Explicit)</a></td>
+                            <td><a href="#">Drake</a></td>
+                            <td>04:32</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="billboardrank">
+                    <h5>美国Billboard榜</h5>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:5%;">
+                            <col style="width:50%;">
+                            <col style="width:30%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>歌曲</th>
+                            <th>歌手</th>
+                            <th>时长</th>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>1</td>
+                            <td></td>
+                            <td><a href="#">Kill Bill</a></td>
+                            <td><a href="#">SZA</a></td>
+                            <td>02:33</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>2</td>
+                            <td></td>
+                            <td><a href="#">Last Night</a></td>
+                            <td><a href="#">Morgan Wallen</a></td>
+                            <td>02:43</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>3</td>
+                            <td></td>
+                            <td><a href="#">Flowers</a></td>
+                            <td><a href="#">Miley Cyrus</a></td>
+                            <td>03:20</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td><a href="#">Princess Diana (Explicit)</a></td>
+                            <td><a href="#">Ice Spice </a>/<a href="#"> Nicki Minaj</a></td>
+                            <td>02:52</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td><a href="#">Ella Baila Sola</a></td>
+                            <td><a href="#">Eslabón Armado </a>/<a href="#"> Peso Pluma</a></td>
+                            <td>02:45</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td><a href="#">Creepin' (Clean)</a></td>
+                            <td><a href="#">Metro Boomin </a>/<a href="#"> The Weeknd</a> /<a href="#"> 21 Savage</a>
+                            </td>
+                            <td>03:59</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td><a href="#">Calm Down</a></td>
+                            <td><a href="#">Rema </a>/<a href="#"> Selena Gomez</a></td>
+                            <td>03:59</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td><a href="#">Die For You (Remix Acapella)</a></td>
+                            <td><a href="#">The Weeknd </a>/<a href="#"> Ariana Grande</a></td>
+                            <td>03:59</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td><a href="#">Search & Rescue (Explicit)</a></td>
+                            <td><a href="#">Drake</a></td>
+                            <td>04:32</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td><a href="#">Boy's a liar Pt. 2</a></td>
+                            <td><a href="#">PinkPantheress </a>/<a href="#"> Ice Spice</a></td>
+                            <td>02:11</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="oriconrank">
+                    <h5>日本Oricon榜</h5>
+                    <table class="table table-hover">
+                        <colgroup>
+                            <col style="width:5%;">
+                            <col style="width:5%;">
+                            <col style="width:50%;">
+                            <col style="width:30%;">
+                            <col style="width:10%;">
+                        </colgroup>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th>歌曲</th>
+                            <th>歌手</th>
+                            <th>时长</th>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>1</td>
+                            <td></td>
+                            <td><a href="#">アイドル </a><span> （偶像）</span></td>
+                            <td><a href="#">YOASOBI</a></td>
+                            <td>03:33</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>2</td>
+                            <td></td>
+                            <td><a href="#">絆ノ奇跡</a><span> （羁绊的奇迹 (TV动画《鬼灭之刃 刀匠村篇》片头曲)）</span></td>
+                            <td><a href="#">MAN WITH A MISSION </a>/<a href="#"> milet</a></td>
+                            <td>03:43</td>
+                        </tr>
+
+                        <tr class="topmusic">
+                            <td>3</td>
+                            <td></td>
+                            <td><a href="#">コイコガレ</a><span> （热恋不已）</span></td>
+                            <td><a href="#"> milet</a> / <a href="#">MAN WITH A MISSION </a></td>
+                            <td>03:35</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td><a href="#">美しい鰭</a><span> （美丽的鳍）</span></td>
+                            <td><a href="#">スピッツ</a></td>
+                            <td>03:29</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td><a href="#">slash</a><span> （TV动画《机动战士高达:水星的魔女 第二季》片头曲）</span></td>
+                            <td><a href="#">yama</a></td>
+                            <td>03:58</td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td><a href="#">紙一重</a><span> （一纸之隔）</span></td>
+                            <td><a href="#">Uru</a></td>
+                            <td>04:09</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td><a href="#">第ゼロ感</a><span> （动画电影《灌篮高手 The First Slam Dunk》片尾曲）</span></td>
+                            <td><a href="#">10-FEET</a></td>
+                            <td>04:47</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td><a href="#">メフィスト</a><span> （梅菲斯特）</span></td>
+                            <td><a href="#">女王蜂</a></td>
+                            <td>03:47</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td></td>
+                            <td><a href="#">愛の花</a><span> （爱之花）</span></td>
+                            <td><a href="#">あいみょん</a></td>
+                            <td>04:00</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td><a href="#">Ｗ●ＲＫ</a><span> （TV动画《地狱乐》片头曲）</span></td>
+                            <td><a href="#">millennium parade </a>/<a href="#"> 椎名林檎</a></td>
+                            <td>03:21</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 歌手子界面 -->
+            <div id="singer">
+                <div id="singertype">
+                    <div class="container">
+                        <ul>
+                            <li class="alloptions"><a href="#">全部</a></li>
+
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">E</a></li>
+
+                            <li><a href="#">F</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">J</a></li>
+
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+
+                            <li><a href="#">Z</a></li>
+                            <li><a href="#">#</a></li>
+
+                        </ul>
+
+                        <ul>
+                            <li class="alloptions"><a href="#">全部</a></li>
+
+                            <li><a href="#">内地</a></li>
+                            <li><a href="#">港台</a></li>
+                            <li><a href="#">欧美</a></li>
+                            <li><a href="#">日本</a></li>
+                            <li><a href="#">韩国</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="alloptions"><a href="#">全部</a></li>
+
+                            <li><a href="#">男</a></li>
+                            <li><a href="#">女</a></li>
+                            <li><a href="#">组合</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="alloptions"><a href="#">全部</a></li>
+
+                            <li><a href="#">流行</a></li>
+                            <li><a href="#">说唱</a></li>
+                            <li><a href="#">国风</a></li>
+                            <li><a href="#">摇滚</a></li>
+                            <li><a href="#">电子</a></li>
+
+                            <li><a href="#">民谣</a></li>
+                            <li><a href="#">R&B</a></li>
+                            <li><a href="#">民族乐</a></li>
+                            <li><a href="#">轻音乐</a></li>
+                            <li><a href="#">爵士</a></li>
+
+                            <li><a href="#">古典</a></li>
+                            <li><a href="#">乡村</a></li>
+                            <li><a href="#">蓝调</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="singerlist">
+                    <div class="container">
+                        <!-- 1-5 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/zhoujielun.jpg">
+                                    <p class="singername">周杰伦</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/chenyixun.jpg">
+                                    <p class="singername">陈奕迅</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/dengziqi.jpg">
+                                    <p class="singername">G.E.M. 邓紫棋</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/xuezhiqian.jpg">
+                                    <p class="singername">薛之谦</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/lironghao.jpg">
+                                    <p class="singername">李荣浩</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 6-10 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/linjunjie.webp">
+                                    <p class="singername">林俊杰</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/zhangjie.webp">
+                                    <p class="singername">张杰</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/caijianya.webp">
+                                    <p class="singername">蔡健雅</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/zhangbichen.webp">
+                                    <p class="singername">张碧晨</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/wangyuan.webp">
+                                    <p class="singername">王源</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 11-15 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/wangxinling.webp">
+                                    <p class="singername">王心凌</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/xusong.webp">
+                                    <p class="singername">许嵩</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/zhoushen.webp">
+                                    <p class="singername">周深</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/zhaolei.webp">
+                                    <p class="singername">赵雷</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/guoding.webp">
+                                    <p class="singername">郭顶</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 16-20 -->
+                        <div class="row">
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/radwimps.webp">
+                                    <p class="singername">RADWIMPS (ラッドウィンプス)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/aimer.webp">
+                                    <p class="singername">Aimer (エメ)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/daoko.webp">
+                                    <p class="singername">DAOKO (ダヲコ)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/mijinxuanshi.webp">
+                                    <p class="singername">米津玄師 (よねづ けんし)</p>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="#">
+                                    <img class="singerphoto" src="./images/yuduaotianguang.jpg">
+                                    <p class="singername ">宇多田光 (宇多田ヒカル)</p>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- 分页 -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <a href="#">关于我们|</a>
+            <a href="#">帮助中心|</a>
+            <a href="#">用户协议|</a>
+            <a href="#">联系我们</a>
+            <br>Powered by Bootstrap 5.3.0
+            <br>Developed by Wei Mingming<br>
+            Copyright &copy; 2023 MusicBox. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+/* video.js播放器样式 */
+.video-js .vjs-big-play-button {
+    font-size: 2.5em;
+    line-height: 2.3em;
+    height: 2.5em;
+    width: 2.5em;
+    -webkit-border-radius: 2.5em;
+    -moz-border-radius: 2.5em;
+    border-radius: 2.5em;
+    /* background-color: #73859f; */
+    background-color: rgba(115, 133, 159, .2);
+    background-color: transparent;
+    border-width: 0.1em;
+    margin-top: -1.25em;
+    margin-left: -1.75em;
+}
+
+/* 中间的播放箭头 */
+.vjs-big-play-button .vjs-icon-placeholder {
+    font-size: 1.63em;
+}
+
+/* 其他样式 */
+/* 播放器 */
+#player,
+#comments {
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#playerbox {
+    width: 100%;
+    background-color: #333;
+    padding-bottom: 10px;
+}
+
+#videotitle {
+    color: #fff;
+}
+
+#videotitle h5 span {
+    font-family: "冬青黑体简体中文 W3";
+    color: #999;
+    font-size: 16px;
+}
+
+/* 评论区 */
+/* 我的评论 */
+#comments {
+    position: relative;
+    margin-top: 40px;
+}
+
+#mycomments {
+    margin-bottom: 10px;
+    padding-bottom: 50px;
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#comments .title {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+#comments .title span {
+    color: #999;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#cmtarea .usercmt .likecmt .likeicon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    /* background-image: url('./images/like.png'); */
+    background-image: url('../images/like.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#cmtarea .usercmt .likecmt:hover .likeicon {
+    width: 16px;
+    height: 16px;
+    /* background-image: url('./images/like_hover.png'); */
+    background-image: url('../images/like_hover.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#comments .form-floating {
+    margin-bottom: 10px;
+}
+
+#comments button {
+    position: absolute;
+    right: 0;
+}
+
+/* 其他用户评论 */
+#cmtarea a{
+    color: #999;
+    font-size: 14px;
+}
+
+#cmtarea .usercmt p{
+    margin-bottom: 0.5rem;
+}
+
+#cmtarea a:hover{
+    color: #D02378;
+}
+
+#cmtarea .title {
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: #DEE2E6 1px solid;
+}
+
+#cmtarea .usercmt{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: #DEE2E6 1px solid;
+}
+
+#cmtarea .usercmt:nth-last-child(1){
+    border-bottom: transparent;
+}
+
+#cmtarea .usercmt .usericon img{
+    position: absolute;
+    top: 0;
+    width: 40px;
+    border-radius: 99px;
+    margin-bottom: 1rem;
+}
+
+#cmtarea .usercmt .userbox{
+    padding-left: 60px;
+}
+
+#cmtarea .usercmt .username{
+    color: #999;
+}
+
+#cmtarea .usercmt .likecmt,
+#cmtarea .usercmt .likecmt .likeicon,
+#cmtarea .usercmt .likecmt .likecnt,
+#cmtarea .usercmt .reply{
+    display: inline-block;
+}
+
+#cmtarea .usercmt .cmtbottom{
+    vertical-align: text-bottom;  
+    line-height: 18px; 
+}
+
+#cmtarea .usercmt .likecmt .likeicon{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/like.png');
+    background-position: bottom;
+}
+
+#cmtarea .usercmt .likecmt:hover .likeicon{
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/like_hover.png');
+    background-position: bottom;
+}
+
+#cmtarea .usercmt .likecmt .likecnt{
+    padding-right: 5px;
+}

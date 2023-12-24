@@ -1,0 +1,91 @@
+/* MV类型 */
+#mvtype ul {
+    padding-bottom: 5px;
+    margin-bottom: 0.5rem;
+    line-height: 23px;
+    font-size: 14px;
+}
+
+#mvtype ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 8px;
+    margin: 0 12px 14px 0;
+}
+
+#mvtype .alloptions {
+    background-color: #D02378;
+    margin-right: 25px;
+}
+
+#mvtype .alloptions a {
+    color: #fff;
+}
+
+/* MV列表 */
+#mvcontent{
+    margin: 0 auto;
+}
+
+#mvcontent ul{
+    width: 100%;
+}
+
+#mvcontent ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 24%;
+    padding: 10px 20px;
+}
+
+#mvcontent ul li .mvimg{
+    position: relative;
+}
+
+#mvcontent ul li img{
+    max-width: 100%;
+    padding-bottom: 5px;
+}
+
+#mvcontent ul li .mvname,
+#mvcontent ul li .mvartist{
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#mvcontent ul li .mvartist a{
+    color: #999;
+}
+
+#mvcontent ul li a:hover,
+#mvcontent ul li .mvartist a:hover{
+    color: #D02378;
+    cursor: pointer;
+}
+
+/* 播放键 */
+#mvcontent ul li .playbutton {
+    background-image: url('../images/playbutton.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    transform: scale(.7);
+    transition-property: opacity, transform;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+#mvcontent ul li a:hover .playbutton {
+    transform: scale(1);
+    opacity: 1;
+    cursor: pointer;
+}

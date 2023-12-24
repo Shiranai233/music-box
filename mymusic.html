@@ -1,0 +1,72 @@
+<!-- basicstyle.html -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap_pink.css" rel="stylesheet">
+    <link href="css/basicstyle.css" rel="stylesheet">
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <style>
+        #box {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #footer {
+            position: absolute;
+            bottom: 40px;
+            width: calc(100% - 60px);
+        }
+
+        #content{
+            background-image: url('./images/ranklist_backgraound.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 -100px;
+            height: calc(100% - 130px);
+        }
+
+        #logintext h5{
+            color: #fff;
+            margin-top: 0;
+            padding-top: 30px;
+        }
+
+        #logintext{
+            padding-left: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="box">
+        <!-- content -->
+        <div id="content">
+            <div id="logintext">
+                <h5>登录音乐盒<br>查看并管理你收藏的私房音乐<br>方便随时随地收听</h5>
+                <button type="button" class="btn btn-primary">立即登录</button>
+            </div>
+        </div>
+        <!-- footer -->
+        <div id="footer">
+            <a href="#">关于我们|</a>
+            <a href="#">帮助中心|</a>
+            <a href="#">用户协议|</a>
+            <a href="#">联系我们</a>
+            <br>Powered by Bootstrap 5.3.0
+            <br>Developed by Wei Mingming<br>
+            Copyright &copy; 2023 MusicBox. All Rights Reserved.
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* otf */
+@font-face {
+    font-family: "冬青黑体简体中文 W3";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW3.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    font-display: swap;
+    src: url("../font/HiraginoSansGBW6.otf") format("opentype");
+}
+
+/* woff */
+/* @font-face {
+    font-family: "冬青黑体简体中文 W3";
+    src: url("../font/HiraginoSansGBW3.woff2") format("woff");
+}
+
+@font-face {
+    font-family: "冬青黑体简体中文 W6";
+    src: url("../font/HiraginoSansGBW6.woff2") format("woff");
+} */
+
+::selection {
+    background-color: #D02378;
+    color: #ffffff;
+}
+
+body {
+    width: 100%;
+    min-width: 1200px;
+    font-family: "冬青黑体简体中文 W3";
+    /* background: #f2f4f7; */
+}
+
+/* header部分 */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0 1px 12px 0 rgba(1, 39, 78, 0.12);
+    background-color: #ffffff;
+    /* background-color: #e685b5; */
+    z-index: 4;
+}
+
+#logo {
+    height: 50px;
+    float: left;
+    margin: 10px 20px;
+}
+
+#logo a img {
+    height: 50px;
+}
+
+#search {
+    position: absolute;
+    right: 180px;
+    top: 17px;
+    /* line-height: 20px; */
+}
+
+#login {
+    background-image: url("../images/user_gray.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    right: 90px;
+    margin-top: -18px;
+}
+
+#login:hover{
+    background-image: url("../images/user_hover.png");
+    cursor: pointer;
+}
+
+/* leftnav部分 */
+#leftnav {
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 2px 0 10px 0 rgba(237, 238, 240, 0.50);
+    background-color: #ffffff;
+    padding-top: 100px;
+    /* padding-left: 20px; */
+}
+
+#leftnav ul {
+    padding-left: 0;
+}
+
+#leftnav ul li {
+    list-style: none;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px;
+    padding-left: 25px;
+    width: 180px;
+}
+
+#leftnav ul li:hover {
+    background-color: #f6f6f7;
+    color: #D02378;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#leftnav ul li:active {
+    background-color: #e0e0e0;
+}
+
+#leftnav ul a {
+    text-decoration: none;
+    color: #434343;
+
+}
+
+/* iframe */
+iframe {
+    position: absolute;
+    float: left;
+    /* inset: 70px 0px 0px 180px; */
+    left: 180px;
+    top: 70px;
+    border: 0px;
+    height: calc(100vh - 70px);
+    width: calc(100vw - 180px);
+}
